@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shri Balaji Resort – Bhawani Mandi, Madhya Pradesh</title>
+  <meta name="description" content="Shri Balaji Resort – A luxury retreat in Bhawani Mandi, Madhya Pradesh. Experience royal hospitality, world-class amenities and breathtaking views." />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- AOS Animation -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="light-mode">
+
+  <!-- ===== PRELOADER ===== -->
+  <div id="preloader">
+    <div class="preloader-inner">
+      <div class="loader-logo">
+        <span class="loader-text">Shri Balaji</span>
+        <div class="loader-bar"><div class="loader-fill"></div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== PARTICLES CANVAS ===== -->
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- ===== DARK MODE TOGGLE ===== -->
+  <button id="theme-toggle" aria-label="Toggle dark mode">
+    <i class="fa-solid fa-moon" id="theme-icon"></i>
+  </button>
+
+  <!-- ===== BACK TO TOP ===== -->
+  <button id="back-to-top" aria-label="Back to top">
+    <i class="fa-solid fa-chevron-up"></i>
+  </button>
+
+  <!-- ===== WHATSAPP BUTTON ===== -->
+  <a href="https://wa.me/919079792240?text=Hello%2C%20I%20would%20like%20to%20book%20a%20room%20at%20Shri%20Balaji%20Resort." 
+     class="whatsapp-btn" target="_blank" rel="noopener" aria-label="WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+    <span>Book Now</span>
+  </a>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        <span class="logo-icon">✦</span>
+        <div class="logo-text">
+          <span class="logo-main">Shri Balaji</span>
+          <span class="logo-sub">Resort</span>
+        </div>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#rooms" class="nav-link">Rooms</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#gallery" class="nav-link">Gallery</a></li>
+        <li><a href="#testimonials" class="nav-link">Reviews</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li><a href="tel:09079792240" class="nav-cta"><i class="fa-solid fa-phone"></i> Call</a></li>
+      </ul>
+      <button class="nav-hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section id="home" class="hero">
+    <div class="hero-bg">
+      <div class="hero-overlay"></div>
+      <!-- Animated gradient orbs -->
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+    </div>
+    <div class="hero-content">
+      <p class="hero-eyebrow" data-aos="fade-down" data-aos-delay="200">✦ Bhawani Mandi, Madhya Pradesh ✦</p>
+      <h1 class="hero-title" data-aos="fade-up" data-aos-delay="300">
+        <span class="title-line">Shri Balaji</span>
+        <span class="title-line gold-text">Resort</span>
+      </h1>
+      <p class="hero-desc" data-aos="fade-up" data-aos-delay="500">
+        Where Royal Heritage Meets Modern Luxury.<br />
+        An Unparalleled Experience Awaits You.
+      </p>
+      <div class="hero-actions" data-aos="fade-up" data-aos-delay="700">
+        <a href="#rooms" class="btn btn-gold">Explore Rooms</a>
+        <a href="#contact" class="btn btn-outline">Book Now</a>
+      </div>
+      <!-- Scroll indicator -->
+      <div class="scroll-indicator" data-aos="fade-up" data-aos-delay="900">
+        <div class="scroll-dot"></div>
+        <span>Scroll Down</span>
+      </div>
+    </div>
+    <!-- Floating badges -->
+    <div class="floating-badge badge-1">
+      <i class="fa-solid fa-star"></i>
+      <div>
+        <strong>5 Star</strong>
+        <small>Luxury Resort</small>
+      </div>
+    </div>
+    <div class="floating-badge badge-2">
+      <i class="fa-solid fa-spa"></i>
+      <div>
+        <strong>Premium</strong>
+        <small>Amenities</small>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT SECTION ===== -->
+  <section id="about" class="about section-pad">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-images" data-aos="fade-right">
+          <div class="about-img-main glass-card">
+            <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=600&q=80" alt="Resort main view" loading="lazy" />
+          </div>
+          <div class="about-img-small glass-card">
+            <img src="https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?w=400&q=80" alt="Resort pool" loading="lazy" />
+          </div>
+          <div class="about-badge-float glass-card">
+            <span class="big-num">25+</span>
+            <span>Years of Excellence</span>
+          </div>
+        </div>
+        <div class="about-content" data-aos="fade-left">
+          <p class="section-eyebrow">✦ Our Legacy</p>
+          <h2 class="section-title">A Heritage of <span class="gold-text">Luxury</span></h2>
+          <p class="about-text">
+            Nestled in the heart of Bhawani Mandi, Madhya Pradesh, Shri Balaji Resort is the crown jewel of hospitality in the region. 
+            For over two decades, we have been welcoming guests with open arms, offering a seamless blend of royal Indian tradition and contemporary elegance.
+          </p>
+          <p class="about-text">
+            Every corner of our resort tells a story — from the hand-crafted décor that celebrates Madhya Pradesh's rich culture 
+            to the lush gardens and pristine facilities that ensure your stay is nothing short of extraordinary.
+          </p>
+          <div class="about-stats">
+            <div class="stat-item">
+              <span class="stat-num">50+</span>
+              <span class="stat-label">Luxury Rooms</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-num">10K+</span>
+              <span class="stat-label">Happy Guests</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-num">15+</span>
+              <span class="stat-label">Awards Won</span>
+            </div>
+          </div>
+          <a href="#contact" class="btn btn-gold">Reserve Your Stay</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ROOMS SECTION ===== -->
+  <section id="rooms" class="rooms section-pad">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <p class="section-eyebrow">✦ Accommodations</p>
+        <h2 class="section-title">Our <span class="gold-text">Luxury Rooms</span></h2>
+        <p class="section-sub">Handcrafted experiences within each of our meticulously designed rooms</p>
+      </div>
+      <div class="rooms-grid">
+        <!-- Room 1 -->
+        <div class="room-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="room-img">
+            <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=600&q=80" alt="Deluxe Room" loading="lazy" />
+            <div class="room-overlay">
+              <a href="#contact" class="btn btn-gold btn-sm">Book Now</a>
+            </div>
+            <span class="room-badge">Most Popular</span>
+          </div>
+          <div class="room-info">
+            <h3>Deluxe Room</h3>
+            <p>King-size bed, city view, en-suite bathroom with premium toiletries</p>
+            <div class="room-meta">
+              <span><i class="fa-solid fa-maximize"></i> 400 sq ft</span>
+              <span><i class="fa-solid fa-user-group"></i> 2 Guests</span>
+              <span><i class="fa-solid fa-wifi"></i> Free WiFi</span>
+            </div>
+            <div class="room-price">
+              <span class="price">₹4,999</span>
+              <span class="per-night">/night</span>
+            </div>
+          </div>
+        </div>
+        <!-- Room 2 -->
+        <div class="room-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="room-img">
+            <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=600&q=80" alt="Suite Room" loading="lazy" />
+            <div class="room-overlay">
+              <a href="#contact" class="btn btn-gold btn-sm">Book Now</a>
+            </div>
+            <span class="room-badge gold-badge">Premium Suite</span>
+          </div>
+          <div class="room-info">
+            <h3>Royal Suite</h3>
+            <p>Panoramic garden view, private lounge, jacuzzi and walk-in wardrobe</p>
+            <div class="room-meta">
+              <span><i class="fa-solid fa-maximize"></i> 700 sq ft</span>
+              <span><i class="fa-solid fa-user-group"></i> 3 Guests</span>
+              <span><i class="fa-solid fa-snowflake"></i> AC + Spa</span>
+            </div>
+            <div class="room-price">
+              <span class="price">₹8,999</span>
+              <span class="per-night">/night</span>
+            </div>
+          </div>
+        </div>
+        <!-- Room 3 -->
+        <div class="room-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="room-img">
+            <img src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?w=600&q=80" alt="Presidential Suite" loading="lazy" />
+            <div class="room-overlay">
+              <a href="#contact" class="btn btn-gold btn-sm">Book Now</a>
+            </div>
+          </div>
+          <div class="room-info">
+            <h3>Presidential Suite</h3>
+            <p>Exclusive floor, butler service, private terrace with resort views</p>
+            <div class="room-meta">
+              <span><i class="fa-solid fa-maximize"></i> 1200 sq ft</span>
+              <span><i class="fa-solid fa-user-group"></i> 4 Guests</span>
+              <span><i class="fa-solid fa-concierge-bell"></i> Butler</span>
+            </div>
+            <div class="room-price">
+              <span class="price">₹15,999</span>
+              <span class="per-night">/night</span>
+            </div>
+          </div>
+        </div>
+        <!-- Room 4 -->
+        <div class="room-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="room-img">
+            <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?w=600&q=80" alt="Family Suite" loading="lazy" />
+            <div class="room-overlay">
+              <a href="#contact" class="btn btn-gold btn-sm">Book Now</a>
+            </div>
+          </div>
+          <div class="room-info">
+            <h3>Family Suite</h3>
+            <p>Two bedrooms, living area, perfect for family getaways and celebrations</p>
+            <div class="room-meta">
+              <span><i class="fa-solid fa-maximize"></i> 900 sq ft</span>
+              <span><i class="fa-solid fa-user-group"></i> 6 Guests</span>
+              <span><i class="fa-solid fa-kitchen-set"></i> Kitchenette</span>
+            </div>
+            <div class="room-price">
+              <span class="price">₹12,999</span>
+              <span class="per-night">/night</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES SECTION ===== -->
+  <section id="services" class="services section-pad">
+    <div class="services-bg-gradient"></div>
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <p class="section-eyebrow">✦ What We Offer</p>
+        <h2 class="section-title">World-Class <span class="gold-text">Services</span></h2>
+        <p class="section-sub">Every detail curated for your comfort and pleasure</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card" data-aos="zoom-in" data-aos-delay="100">
+          <div class="service-icon"><i class="fa-solid fa-utensils"></i></div>
+          <h3>Fine Dining</h3>
+          <p>Multi-cuisine restaurant with authentic Indian, Continental and Chinese dishes, crafted by award-winning chefs.</p>
+        </div>
+        <div class="service-card" data-aos="zoom-in" data-aos-delay="150">
+          <div class="service-icon"><i class="fa-solid fa-spa"></i></div>
+          <h3>Luxury Spa</h3>
+          <p>Ayurvedic therapies, deep tissue massages, and beauty treatments to rejuvenate your body and soul.</p>
+        </div>
+        <div class="service-card" data-aos="zoom-in" data-aos-delay="200">
+          <div class="service-icon"><i class="fa-solid fa-water-ladder"></i></div>
+          <h3>Swimming Pool</h3>
+          <p>Infinity pool with a panoramic view of the lush gardens, open from 6 AM to 10 PM daily.</p>
+        </div>
+        <div class="service-card" data-aos="zoom-in" data-aos-delay="250">
+          <div class="service-icon"><i class="fa-solid fa-dumbbell"></i></div>
+          <h3>Fitness Centre</h3>
+          <p>State-of-the-art gym with personal trainers available. Yoga and meditation sessions on request.</p>
+        </div>
+        <div class="service-card" data-aos="zoom-in" data-aos-delay="300">
+          <div class="service-icon"><i class="fa-solid fa-people-roof"></i></div>
+          <h3>Event Venue</h3>
+          <p>Grand banquet halls and outdoor lawns for weddings, conferences, and celebrations up to 1000 guests.</p>
+        </div>
+        <div class="service-card" data-aos="zoom-in" data-aos-delay="350">
+          <div class="service-icon"><i class="fa-solid fa-car"></i></div>
+          <h3>Valet & Transfer</h3>
+          <p>24/7 airport pickup, valet parking, and luxury car rental services for seamless travel.</p>
+        </div>
+        <div class="service-card" data-aos="zoom-in" data-aos-delay="400">
+          <div class="service-icon"><i class="fa-solid fa-wifi"></i></div>
+          <h3>High-Speed WiFi</h3>
+          <p>Complimentary high-speed internet throughout the resort, including all rooms and common areas.</p>
+        </div>
+        <div class="service-card" data-aos="zoom-in" data-aos-delay="450">
+          <div class="service-icon"><i class="fa-solid fa-child-reaching"></i></div>
+          <h3>Kids Zone</h3>
+          <p>Dedicated play area, entertainment centre, and supervised activities for children of all ages.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== GALLERY SECTION ===== -->
+  <section id="gallery" class="gallery section-pad">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <p class="section-eyebrow">✦ Visual Journey</p>
+        <h2 class="section-title">Our <span class="gold-text">Gallery</span></h2>
+        <p class="section-sub">A glimpse into the world of Shri Balaji Resort</p>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item" data-aos="fade-up" data-aos-delay="100" onclick="openLightbox(0)">
+          <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=600&q=80" alt="Resort Exterior" loading="lazy" />
+          <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+        </div>
+        <div class="gallery-item" data-aos="fade-up" data-aos-delay="150" onclick="openLightbox(1)">
+          <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=600&q=80" alt="Pool Area" loading="lazy" />
+          <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+        </div>
+        <div class="gallery-item tall" data-aos="fade-up" data-aos-delay="200" onclick="openLightbox(2)">
+          <img src="https://images.unsplash.com/photo-1445019980597-93fa8acb246c?w=600&q=80" alt="Restaurant" loading="lazy" />
+          <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+        </div>
+        <div class="gallery-item" data-aos="fade-up" data-aos-delay="250" onclick="openLightbox(3)">
+          <img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?w=600&q=80" alt="Suite" loading="lazy" />
+          <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+        </div>
+        <div class="gallery-item wide" data-aos="fade-up" data-aos-delay="300" onclick="openLightbox(4)">
+          <img src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=900&q=80" alt="Lobby" loading="lazy" />
+          <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+        </div>
+        <div class="gallery-item" data-aos="fade-up" data-aos-delay="350" onclick="openLightbox(5)">
+          <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600&q=80" alt="Dining" loading="lazy" />
+          <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LIGHTBOX -->
+  <div id="lightbox" class="lightbox">
+    <button class="lightbox-close" onclick="closeLightbox()"><i class="fa-solid fa-xmark"></i></button>
+    <button class="lightbox-prev" onclick="changeLightbox(-1)"><i class="fa-solid fa-chevron-left"></i></button>
+    <button class="lightbox-next" onclick="changeLightbox(1)"><i class="fa-solid fa-chevron-right"></i></button>
+    <img id="lightbox-img" src="" alt="Gallery Image" />
+  </div>
+
+  <!-- ===== TESTIMONIALS SECTION ===== -->
+  <section id="testimonials" class="testimonials section-pad">
+    <div class="testimonials-bg"></div>
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <p class="section-eyebrow">✦ Guest Reviews</p>
+        <h2 class="section-title">What Our <span class="gold-text">Guests Say</span></h2>
+      </div>
+      <div class="testimonial-slider" data-aos="fade-up" data-aos-delay="200">
+        <div class="testimonial-track" id="testimonial-track">
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p>"An absolutely magnificent stay! The rooms were opulent, the food was divine, and the staff went above and beyond to make our anniversary unforgettable. Shri Balaji Resort is truly a gem of Madhya Pradesh."</p>
+            <div class="reviewer">
+              <div class="reviewer-avatar">RS</div>
+              <div>
+                <strong>Rajesh Sharma</strong>
+                <span>Jaipur, Rajasthan</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p>"We hosted our daughter's wedding here and it was a dream come true. The banquet hall, decorations, catering — everything was perfect. The team coordinated every detail flawlessly. Highly recommended!"</p>
+            <div class="reviewer">
+              <div class="reviewer-avatar">PM</div>
+              <div>
+                <strong>Priya Mehta</strong>
+                <span>Indore, Madhya Pradesh</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p>"The spa experience was out of this world! The Ayurvedic treatment left me completely refreshed. Beautiful resort, warm hospitality, and exceptional cleanliness. Will definitely return next year."</p>
+            <div class="reviewer">
+              <div class="reviewer-avatar">AK</div>
+              <div>
+                <strong>Amit Kumar</strong>
+                <span>Bhopal, Madhya Pradesh</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p>"Best corporate retreat we've ever had! The conference facilities were top-notch, the rooms were luxurious, and the team building activities were fantastic. Our entire team loved every moment."</p>
+            <div class="reviewer">
+              <div class="reviewer-avatar">SV</div>
+              <div>
+                <strong>Sneha Verma</strong>
+                <span>Mumbai, Maharashtra</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slider-controls">
+          <button class="slider-btn" id="prev-btn" onclick="moveSlider(-1)"><i class="fa-solid fa-chevron-left"></i></button>
+          <div class="slider-dots" id="slider-dots"></div>
+          <button class="slider-btn" id="next-btn" onclick="moveSlider(1)"><i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <section id="contact" class="contact section-pad">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <p class="section-eyebrow">✦ Get In Touch</p>
+        <h2 class="section-title">Contact <span class="gold-text">Us</span></h2>
+        <p class="section-sub">We'd love to hear from you. Let us plan your perfect stay.</p>
+      </div>
+      <div class="contact-grid">
+        <!-- Contact Info -->
+        <div class="contact-info" data-aos="fade-right">
+          <div class="contact-item glass-card">
+            <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div>
+              <h4>Our Location</h4>
+              <p>Shri Balaji Resort, Bhawani Mandi,<br />Jhalawar District, Madhya Pradesh</p>
+            </div>
+          </div>
+          <div class="contact-item glass-card">
+            <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+            <div>
+              <h4>Phone</h4>
+              <a href="tel:09079792240">09079792240</a>
+            </div>
+          </div>
+          <div class="contact-item glass-card">
+            <div class="contact-icon"><i class="fa-brands fa-whatsapp"></i></div>
+            <div>
+              <h4>WhatsApp</h4>
+              <a href="https://wa.me/919079792240" target="_blank">+91 9079792240</a>
+            </div>
+          </div>
+          <div class="contact-item glass-card">
+            <div class="contact-icon"><i class="fa-solid fa-clock"></i></div>
+            <div>
+              <h4>Check-in / Check-out</h4>
+              <p>Check-in: 12:00 PM &nbsp;|&nbsp; Check-out: 11:00 AM</p>
+            </div>
+          </div>
+          <!-- Action buttons -->
+          <div class="contact-actions">
+            <a href="tel:09079792240" class="btn btn-gold">
+              <i class="fa-solid fa-phone"></i> Call Now
+            </a>
+            <a href="https://wa.me/919079792240?text=Hello%2C%20I%20want%20to%20book%20a%20room." class="btn btn-whatsapp" target="_blank">
+              <i class="fa-brands fa-whatsapp"></i> WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <!-- Booking Form -->
+        <div class="contact-form-wrap" data-aos="fade-left">
+          <div class="glass-card form-card">
+            <h3>Send a Message</h3>
+            <div class="form-group">
+              <input type="text" id="name" placeholder="Your Name" />
+            </div>
+            <div class="form-group">
+              <input type="tel" id="phone" placeholder="Phone Number" />
+            </div>
+            <div class="form-group">
+              <input type="email" id="email" placeholder="Email Address" />
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <input type="date" id="checkin" />
+              </div>
+              <div class="form-group">
+                <input type="date" id="checkout" />
+              </div>
+            </div>
+            <div class="form-group">
+              <select id="room-type">
+                <option value="">Select Room Type</option>
+                <option>Deluxe Room</option>
+                <option>Royal Suite</option>
+                <option>Presidential Suite</option>
+                <option>Family Suite</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <textarea id="message" rows="3" placeholder="Special Requests or Message..."></textarea>
+            </div>
+            <button class="btn btn-gold full-width" onclick="submitForm()">
+              <i class="fa-solid fa-paper-plane"></i> Send Enquiry
+            </button>
+            <div id="form-success" class="form-success" style="display:none;">
+              ✅ Thank you! We'll get back to you shortly.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Google Map -->
+      <div class="map-wrap" data-aos="fade-up">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57889.60296020657!2d76.52800827931639!3d24.04958960000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396f0a4bc3dada79%3A0x6d7cbef3c2f17c0b!2sBhawani%20Mandi%2C%20Madhya%20Pradesh!5e0!3m2!1sen!2sin!4v1697034521012!5m2!1sen!2sin"
+          allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Shri Balaji Resort Location">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a href="#home" class="nav-logo footer-logo">
+              <span class="logo-icon">✦</span>
+              <div class="logo-text">
+                <span class="logo-main">Shri Balaji</span>
+                <span class="logo-sub">Resort</span>
+              </div>
+            </a>
+            <p>A sanctuary of luxury and heritage in the heart of Madhya Pradesh. Where every moment becomes a cherished memory.</p>
+            <div class="social-links">
+              <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+              <a href="https://wa.me/919079792240" target="_blank" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+              <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+          </div>
+          <div class="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#rooms">Rooms</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#gallery">Gallery</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><a href="#services">Fine Dining</a></li>
+              <li><a href="#services">Luxury Spa</a></li>
+              <li><a href="#services">Swimming Pool</a></li>
+              <li><a href="#services">Event Venue</a></li>
+              <li><a href="#services">Fitness Centre</a></li>
+              <li><a href="#services">Valet Service</a></li>
+            </ul>
+          </div>
+          <div class="footer-contact">
+            <h4>Contact Us</h4>
+            <p><i class="fa-solid fa-location-dot"></i> Bhawani Mandi, Madhya Pradesh</p>
+            <p><i class="fa-solid fa-phone"></i> <a href="tel:09079792240">09079792240</a></p>
+            <p><i class="fa-brands fa-whatsapp"></i> <a href="https://wa.me/919079792240">+91 9079792240</a></p>
+            <p><i class="fa-solid fa-clock"></i> Check-in: 12:00 PM</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>© 2024 Shri Balaji Resort, Bhawani Mandi. All Rights Reserved.</p>
+        <p>Designed with <span style="color:#c9a84c">♥</span> for Luxury</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- AOS JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
